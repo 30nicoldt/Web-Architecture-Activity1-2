@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Activity 1: Web Architecture & Semantic HTML5 </title>
+    <link rel="stylesheet" href="style.css">
+<style>
+article {
+        border: 1px solid #03203e;
+        padding: 15px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        background-color: rgb(249, 249, 217);
+    }
+#multimedia {
+        background-color:rgb(249, 249, 217);
+        border-left: 5px solid #03203e;
+    }
+#form-section {
+        background-color: rgb(249, 249, 217);
+        border: 2px solid #03203e;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1 style="color: white;">
+    Web Architecture & Semantic HTML5
+    </h1>
+
+<nav>
+    <a href = "#architecture">Architecture </a> |
+    <a href = "#multimedia">Multimedia</a> |
+    <a href = "#form-section">Form</a>
+</nav>
+</header>
+
+<main>      
+    <section id ="architecture"> 
+        <h2>1. Web Architecture Concepts</h2>
+
+    <article>
+        <h3>Client-Server Model</h3>
+        <p> The Client (your browser) sends a request, and the Server returns the web page response.</p>
+    </article>
+
+    <article>
+        <h3> DNS (Domain Name System)</h3>
+        <p>Translates human-friendly domain names (like example.com) into numeric IP addresses.</p>
+    </article>
+
+    <article>
+        <h3>HTTP vs. HTTPS</h3>
+        <p>HTTP sends data in plain text, while HTTPS encrypts data securely using SSL/TLS.</p>
+    </article>
+    </section>
+    
+    <section id="multimedia">
+        <h2>2. HTML5 Multimedia</h2>
+        <h3>Audio Tag:</h3>
+        <audio controls>
+            <source src = "https://www.w3schools.com/html/horse.mp3" type = "audio/mpeg">
+        </audio>
+
+        <h3>Video Tag:</h3>
+        <video controls width="400" style="border: 2px solid #03203e; border-radius: 12px; display: block; margin: 10px 0;">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        </video>
+        </section>
+
+    <section id="form-section">
+        <h2>3. HTML5 Form & Validation</h2>
+        <form>
+            <div>
+                <label for="fullname">Full Name (Required):</label><br>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+<br>
+            <div>
+                <label for="email">Email Address (Active Validation):</label><br>
+                <input type="email" id="email" name="email" required>
+            </div>
+<br>
+
+            <div>
+                <label for="protocol">Which protocol uses encryption? (Select an option)</label><br>
+                <select id="protocol" name="protocol" required>
+                    <option value="">-- Please select --</option>
+                    <option value="http">HTTP</option>
+                    <option value="https">HTTPS</option>
+                </select>
+            </div>
+<br>
+            <button type="submit" style="background-color: #03203e; color: white; font-weight: bold; padding: 12px 30px; border: none; border-radius: 25px;"> 
+            Submit Form
+            </button>
+        </form>
+    </section>
+</main>
+</body>
+</html>
